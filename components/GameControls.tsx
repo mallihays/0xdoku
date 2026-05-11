@@ -112,7 +112,7 @@ export default function GameControls({
 }: GameControlsProps) {
   const [expanded, setExpanded] = useState(false);
   const [showLeave, setShowLeave] = useState(false);
-  const [musicOn, setMusicOn] = useState(isDaily);
+  const [musicOn, setMusicOn] = useState(false);
   const [volume, setVolume] = useState(0.5);
 
   const audioCtxRef = useRef<AudioContext | null>(null);
